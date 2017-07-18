@@ -1,0 +1,12 @@
+body{
+	overflow: hidden;
+	}
+div{
+	width: 200px;
+	height: 200px;
+	background: #ccc;
+	float: left;
+	margin: 20px;
+	@media screen and (min-width:600px) and (max-width:800px){
+	div{ background:red; }
+}

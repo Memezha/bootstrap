@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<title></title>
+		<style>
+						
+			.qq {
+				border: 1px solid #F66A9B;
+				
+				
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container-fluid hehe">
+			<div class="row box">
+				<div class="col-md-3 text-left col-xs-6 col-md-8 qq">
+					<u>
+				      <h3 class="text-center">栅格系统</h3>
+				<p class="lead small">栅格系统用于通过一系列的行（row）与列（column）的组合来创建页面布局，
+				你的内容就可以放入这些创建好的布局中。
+				 Bootstrap 栅格系统的工作原理： “行（row）”必须包含在 .container （固定宽度）
+				 或 .container-fluid （100% 宽度）中，以便为其赋予合适的排列（aligment）和内补（padding）。
+				  通过“行（row）”在水平方向创建一组“列（column）”。 
+				  你的内容应当放置于“列（column）”内，并且，只有“列（column）”可以作为行（row）”的直接子元素。 
+				  类似 .row 和 .col-xs-4 这种预定义的类，可以用来快速创建栅格布局。
+				  Bootstrap 源码中定义的 mixin 也可以用来创建语义化的布局。 
+				  通过为“列（column）”设置 padding 属性，从而创建列与列之间的间隔（gutter）。
+				  通过为 .row 元素设置负值 margin 从而抵消掉为 .container 元素设置的 padding，也就间接为“行（row）”所包含的“列（column）”抵消掉了padding。 
+				  负值的 margin就是下面的示例为什么是向外突出的原因。在栅格列中的内容排成一行。
+				   栅格系统中的列是通过指定1到12的值来表示其跨越的范围。
+				   例如，三个等宽的列可以使用三个 .col-xs-4 来创建。
+				    如果一“行（row）”中包含了的“列（column）”大于 12，多余的“列（column）”所在的元素将被作为一个整体另起一行排列。
+				     栅格类适用于与屏幕宽度大于或等于分界点大小的设备 ， 并且针对小屏幕设备覆盖栅格类。 
+				     因此，在元素上应用任何 .col-md-* 栅格类适用于与屏幕宽度大于或等于分界点大小的设备 ，
+				      并且针对小屏幕设备覆盖栅格类。 因此，在元素上应用任何 .col-lg-* 不存在， 也影响大屏幕设备。
+				      </p>
+				      </u>
+				</div>
+				<div class="col-md-3  col-xs-6 col-md-8 text-left qq">
+					<u>
+				      <h3 class="text-center">表格</h3>
+				<p class="lead small">
+				        <ol>
+				        <li> .table 类可以为其赋予基本的样式 — 少量的内补（padding）和水平方向的分隔线。</li>
+				        <li>通过 .table-striped 类可以给 tbody> 之内的每一行增加斑马条纹样式。</li>
+				        <li><p class="text-uppercase"><strong>跨浏览器兼容性</strong></p>条纹状表格是依赖 :nth-child CSS 选择器实现的，而这一功能不被 Internet Explorer 8 支持
+				        </li>
+				        <li><h4>带边框的表格</h4>
+				        添加 .table-bordered 类为表格和其中的每个单元格增加边框。
+				        </li>
+				        <li>
+				        <h4>状态类</h4>
+                          通过这些状态类可以为行或单元格设置颜色。
+
+                            Class	描述
+                             .active	鼠标悬停在行或单元格上时所设置的颜色
+                                 .success	标识成功或积极的动作
+                                  .info	标识普通的提示信息或动作
+                                     .warning	标识警告或需要用户注意
+                                      .danger	标识危险或潜在的带来负面影响的动作
+				        </li>
+				        </ol>
+				      </p>
+				      </u>
+				</div>
+				<div class="col-md-3 text-left col-xs-6 col-md-8 qq">
+					<u>
+				      <h3 class="text-center">表单</h3>
+				      <p class="lead small">				
+				        <ol>
+				        <li><h4>基本实例</h4>
+				        单独的表单控件会被自动赋予一些全局样式。所有设置了 .form-control 类的 input>、textarea> 和 select> 元素都将被默认设置宽度属性为 width: 100%;。 将 label 元素和前面提到的控件包裹在 .form-group 中可以获得最好的排列。
+				        </li>
+				        <li><h4>内联表单</h4>
+				        为 form> 元素添加 .form-inline 类可使其内容左对齐并且表现为 inline-block 级别的控件。只适用于视口（viewport）至少在 768px 宽度时（视口宽度再小的话就会使表单折叠）。
+				        
+				        <li><h4>水平排列的表单</h4>
+				          通过为表单添加 .form-horizontal 类，并联合使用 Bootstrap 预置的栅格类，可以将 label 标签和控件组水平并排布局。这样做将改变 .form-group 的行为，使其表现为栅格系统中的行（row），因此就无需再额外添加 .row 了
+				        </li>
+				        </ol>
+				      </p>
+				      </u>
+				</div>
+				<div class="col-md-3  col-xs-6 col-md-8 text-left qq">
+					<u>
+				      <h3 class="text-center">按钮</h3>
+				      <p class="lead small">				
+				        <ol>
+				        <li><h4>可作为按钮使用的标签或元素</h4>
+				        为 <a、button> 或 input> 元素添加按钮类（button class）即可使用 Bootstrap 提供的样式。
+				        </li>
+				        <li><h4>按钮尺寸</h4>
+				        使用 .btn-lg、.btn-sm 或 .btn-xs 就可以获得不同尺寸的按钮。
+				        <br /> 通过给按钮添加 .btn-block 类可以将其拉伸至父元素100%的宽度，而且按钮也变为了块级（block）元素。
+				        </li>
+				        <li><h4>禁用状态</h4>
+				          为 button> 元素添加 disabled 属性，使其表现出禁用状态。
+				          
+				        </li>
+				        </ol>
+				      </p>
+				      </u>
+				</div>
+
+			</div>
+		</div>
+	</body>
+
+</html>
